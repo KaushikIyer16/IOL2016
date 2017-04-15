@@ -1,0 +1,202 @@
+
+html, body{
+
+	background: #F6E8D9;
+	/* Restrict body to viewport size. Remove if a footer or scrolling page is required */
+	font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+	padding-bottom: 5rem;
+
+}
+a{
+	color:#CB0000;
+}
+h1 {
+	font-family: 'Roboto Slab';
+	color:#cb0000;
+	text-align: center;
+	font-size: 30px;
+	}
+
+h2 {
+	font-family: 'Lato';
+	color:#A24F47;
+	text-align: left;
+	font-size: 20px;
+	}
+
+html, body{
+	overflow: initial;
+	}
+
+p{	font-family: 'Lato';
+	font-size: 16px;
+	}
+
+
+.navbar-inverse{
+	background: #EFDFD0; /* Fallback for old browsers that don't support rgba() */
+	background: rgba(0,0,0,0.05);
+	border:none;
+}
+.navbar-nav li a{
+	color:#634A38 !important;
+	padding: 42px 30px;
+	padding: 3rem 2.1rem;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+	font-weight: 700;
+}
+
+.navbar-nav li a:hover{
+	color:#CB0000;
+}
+
+#drop li{
+	background: #EFDFD0 !important;
+
+}
+#drop ul{
+	background: #EFDFD0 !important;
+}
+#drop li a{
+	padding: 10px;
+}
+
+#iol-logo{
+	position: absolute;
+	left: 48px;
+	left: 4rem;
+	top: 66px;
+	top:10rem;
+	width: 150px;
+	width: 12.5rem;
+	border:none;
+	z-index: 200;
+}
+
+#menu{
+	position:relative;
+	z-index: 100;
+}
+
+.navbar-nav li:hover a, .navbar-nav li:focus a, .navbar-nav li:active a{
+	color: #cb0000 !important;
+
+}
+.nav.navbar-nav > li.dropdown.active.open > a,
+.nav.navbar-nav > li.dropdown.active.open > ul.dropdown-menu a:hover,
+.nav.navbar-nav > li.dropdown.open > a,
+.nav.navbar-nav > li.dropdown.open > ul.dropdown-menu a:hover
+{
+
+ background: rgba(0,0,0,0.05);
+  border-color: #fff;
+}
+.mt-1{
+	margin-top: 1rem;
+	display:block;
+
+}
+
+/*bottom consists of the css for the iol_results page*/
+
+.centered th{
+	text-align: center;
+}
+.centered p,.centered>th>p{
+	margin: 10px 0px;
+}
+.gold{
+	color: rgb(201,137,16)
+}
+.silver{
+	color: rgb(168, 168, 168);
+}
+.bronze{
+	color: rgb(150, 90, 56);
+}
+/*Resize the logo on small screen devices*/
+@media (max-width: 48em) {
+	body{
+		margin-top: 4rem;
+	}
+
+	.navbar-brand#logo{
+		display:none;
+	}
+	#iol-logo{
+		width: 5rem;
+		right: 0;
+		top:1rem;
+		margin:auto;
+		left: 0;
+		z-index: 5;
+	}
+	#menu{
+		position: absolute;
+		width: 100%;
+		top: 0;
+	}
+	.navbar-nav li a{
+		padding: 1.5rem 3rem;
+		transition:none;
+	}
+	.navbar-nav li:hover, .navbar-nav li:focus, .navbar-nav li:active{
+		background: #cb0000;
+	}
+
+	.navbar-nav li:hover a, .navbar-nav li:focus a, .navbar-nav li:active a{
+		color: #F6E8D9 !important;
+
+	}
+	.nav.navbar-nav > li.dropdown.active.open > a,
+.nav.navbar-nav > li.dropdown.active.open > ul.dropdown-menu a:hover,
+.nav.navbar-nav > li.dropdown.open > a,
+.nav.navbar-nav > li.dropdown.open > ul.dropdown-menu a:hover
+{
+
+ background: rgba(0,0,0,0.05);
+  border-color: #fff;
+}
+	#drop li a{
+		color:black !important;
+	}
+		#drop li{
+		color:black !important;
+	}
+	.dropdown-toggle #drop li a:hover	{
+	color:white !important;
+	}
+
+	#drop li a:hover{
+background:#cb0000;
+	}
+	#navbar-scroll{
+		background: #F6E8D9;
+		position: relative;
+		z-index: 3;
+		padding: 0;
+	}
+
+	#navbar-scroll ul{
+		margin: 0;
+	}
+
+
+	.navbar-inverse .navbar-collapse{
+		border-bottom:1px solid rgba(0,0,0,0.1) !important;
+		border-top:1px solid rgba(0,0,0,0.1) !important;
+
+	}
+	.navbar-inverse .navbar-toggle{
+		border:none !important;
+	}
+
+	.navbar-inverse .navbar-toggle.collapsed .icon-bar{
+		background:#695144;
+	}
+
+	.navbar-toggle:focus {
+		background: transparent !important ;
+	}
+}
